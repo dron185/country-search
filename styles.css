@@ -5,5 +5,72 @@
 
 body {
   margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 800px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.country-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.country-card {
+  border: 1px solid #ccc;
   padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.country-card:hover {
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.country-card img {
+  width: 50px;
+  height: auto;
+}
+
+.loader {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.hint {
+  color: #666;
+  font-style: italic;
+}
+
+.error-block {
+  color: #d00;
+  border: 1px solid #d00;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.error-block button {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.extra-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px dashed #ccc;
+  padding-top: 0.5rem;
 }
